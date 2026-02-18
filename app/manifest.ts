@@ -1,0 +1,21 @@
+import type { MetadataRoute } from 'next';
+
+export default function manifest(): MetadataRoute.Manifest {
+	return {
+		name: 'El Metodo Adulma',
+		short_name: 'Adulma',
+		description:
+			'Metodo integral para adultos mayores con foco en movimiento, cognicion y bienestar.',
+		start_url: '/',
+		display: 'standalone',
+		background_color: '#FEE6B9',
+		theme_color: '#FDB259',
+		icons: [
+			{
+				src: '/logoroundedsvg.svg',
+				type: 'image/svg+xml',
+				sizes: 'any',
+			},
+		],
+	};
+}
