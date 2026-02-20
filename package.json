@@ -37,5 +37,18 @@
 	"engines": {
 		"node": ">=20.11.0"
 	},
+	"browserslist": {
+		"production": [
+			"chrome >= 107",
+			"edge >= 107",
+			"firefox >= 104",
+			"safari >= 16"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
 	"packageManager": "pnpm@9.5.0"
 }
