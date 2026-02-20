@@ -1,22 +1,44 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+
 import Link from 'next/link';
 
 import { Container } from '@/src/components/ui/container';
 import { homeHero } from '@/src/features/home/home-content';
 
 export function HeroSection() {
+	const [showVideo, setShowVideo] = useState(false);
+
+	useEffect(() => {
+		const timer = window.setTimeout(() => {
+			setShowVideo(true);
+		}, 1200);
+
+		return () => window.clearTimeout(timer);
+	}, []);
+
 	return (
 		<section className='relative isolate overflow-hidden border-b border-border-subtle bg-brand-ink text-text-inverted'>
-			<video
-				className='absolute inset-0 -z-10 h-full w-full object-cover opacity-45'
-				autoPlay
-				muted
-				loop
-				playsInline
-				preload='auto'
-				poster={homeHero.posterSrc}
-			>
-				<source src={homeHero.videoSrc} type='video/mp4' />
-			</video>
+			{!showVideo ? (
+				<div
+					className='absolute inset-0 -z-10 animate-pulse bg-gradient-to-br from-brand-ink via-brand-ink/85 to-brand-primary/30'
+					aria-hidden='true'
+				/>
+			) : null}
+			{showVideo ? (
+				<video
+					className='absolute inset-0 -z-10 h-full w-full object-cover opacity-45'
+					autoPlay
+					muted
+					loop
+					playsInline
+					preload='metadata'
+					aria-hidden='true'
+				>
+					<source src={homeHero.videoSrc} type='video/mp4' />
+				</video>
+			) : null}
 
 			<div
 				className='pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-brand-ink/20 via-brand-ink/60 to-brand-ink'
