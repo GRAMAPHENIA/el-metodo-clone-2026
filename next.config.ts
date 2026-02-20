@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
 	reactStrictMode: true,
 	poweredByHeader: false,
 	compress: true,
+	experimental: {
+		inlineCss: true,
+	},
 	outputFileTracingRoot: currentDir,
 	images: {
 		formats: ['image/avif', 'image/webp'],
