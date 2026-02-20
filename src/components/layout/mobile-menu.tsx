@@ -21,14 +21,14 @@ export function MobileMenu({ items }: MobileMenuProps) {
 			<button
 				type='button'
 				onClick={() => setOpen(true)}
-				aria-label='Abrir menu principal'
+				aria-label='Abrir menú principal'
 				className='inline-flex min-h-11 min-w-11 items-center justify-center rounded-button border border-border-subtle bg-surface-base text-brand-ink lg:hidden'
 			>
 				<BsList className='text-2xl' />
 			</button>
 
-			<Modal isOpen={open} onClose={() => setOpen(false)} title='Menu principal'>
-				<nav aria-label='Navegacion movil'>
+			<Modal isOpen={open} onClose={() => setOpen(false)} title='Menú principal'>
+				<nav aria-label='Navegación móvil'>
 					<ul className='space-y-3'>
 						{items.map(item => {
 							const active = pathname === item.href;

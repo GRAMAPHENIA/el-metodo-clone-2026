@@ -5,11 +5,11 @@ import { galleryImages } from '@/src/features/galeria/galeria-content';
 
 export function PhotoGallerySection() {
 	return (
-		<section className='section-spacing bg-brand-surface'>
+		<section className='section-spacing bg-surface-base'>
 			<Container>
 				<SectionHeading
-					eyebrow='Galeria'
-					title='Imagenes de nuestras actividades'
+					eyebrow='Galería'
+					title='Imágenes de nuestras actividades'
 					description='Registro de clases y encuentros.'
 				/>
 				<div className='mt-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-3'>

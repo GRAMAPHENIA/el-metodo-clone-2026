@@ -1,7 +1,7 @@
 import type { MediaAsset } from '@/src/types/content';
 
 export const galleryImages: MediaAsset[] = [
-	{ src: '/galeria/imagen1.webp', alt: 'Clase grupal de El Metodo', width: 1200, height: 900 },
+	{ src: '/galeria/imagen1.webp', alt: 'Clase grupal de El Método', width: 1200, height: 900 },
 	{
 		src: '/galeria/imagen2.webp',
 		alt: 'Participantes realizando ejercicios coordinados',
@@ -16,25 +16,25 @@ export const galleryImages: MediaAsset[] = [
 	},
 	{
 		src: '/galeria/imagen4.webp',
-		alt: 'Sesion de trabajo cognitivo y motor',
+		alt: 'Sesión de trabajo cognitivo y motor',
 		width: 1200,
 		height: 900,
 	},
 	{
 		src: '/galeria/imagen5.webp',
-		alt: 'Dinamica grupal del metodo',
+		alt: 'Dinámica grupal del método',
 		width: 1200,
 		height: 900,
 	},
 	{
 		src: '/galeria/imagen6.webp',
-		alt: 'Clase en salon de entrenamiento',
+		alt: 'Clase en salón de entrenamiento',
 		width: 1200,
 		height: 900,
 	},
 	{
 		src: '/galeria/imagen7.webp',
-		alt: 'Participantes durante practica guiada',
+		alt: 'Participantes durante práctica guiada',
 		width: 1200,
 		height: 900,
 	},
@@ -53,7 +53,7 @@ export const galleryImages: MediaAsset[] = [
 ];
 
 export const galleryVideos: MediaAsset[] = [
-	{ src: '/galeria-videos/001.mp4', alt: 'Video de galeria 2' },
-	{ src: '/galeria-videos/04.mp4', alt: 'Video de galeria 4' },
-	{ src: '/galeria-videos/05.mp4', alt: 'Video de galeria 5' },
+	{ src: '/galeria-videos/001.mp4', alt: 'Video de galería 2' },
+	{ src: '/galeria-videos/04.mp4', alt: 'Video de galería 4' },
+	{ src: '/galeria-videos/05.mp4', alt: 'Video de galería 5' },
 ];

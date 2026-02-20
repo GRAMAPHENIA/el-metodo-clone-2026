@@ -1,33 +1,43 @@
 import { Container } from '@/src/components/ui/container';
-import { SectionHeading } from '@/src/components/ui/section-heading';
-import { metodoCards, metodoPageContent } from '@/src/features/metodo/metodo-content';
+import {
+	metodoLeftCards,
+	metodoPageContent,
+	metodoRightCards,
+} from '@/src/features/metodo/metodo-content';
+
+function MethodTextCard({ text }: { text: string }) {
+	return (
+		<article className='surface-card h-full p-3 sm:p-4'>
+			<div className='flex h-full min-h-60 items-center justify-center rounded-[calc(var(--radius-card)-0.25rem)] px-5 py-7 sm:px-7 sm:py-9'>
+				<p className='text-center text-[length:var(--step-0)] font-medium leading-relaxed text-brand-accent'>
+					{text}
+				</p>
+			</div>
+		</article>
+	);
+}
 
 export function MethodOverviewSection() {
 	return (
-		<section className='section-spacing bg-brand-primary/40'>
+		<section className='section-spacing bg-surface-base'>
 			<Container>
-				<SectionHeading
-					eyebrow='El Metodo'
-					title={metodoPageContent.title}
-					description={metodoPageContent.intro}
-				/>
+				<h2 className='sr-only'>{metodoPageContent.sectionTitle}</h2>
 
-				<div className='mt-10 grid gap-6 md:grid-cols-2'>
-					{metodoCards.slice(0, 4).map(card => (
-						<article key={card.id} className='surface-panel p-6 sm:p-8'>
-							<p className='text-[length:var(--step-1)] font-semibold leading-relaxed text-text-primary'>
-								{card.text}
-							</p>
-						</article>
-					))}
+				<div className='mx-auto grid max-w-6xl items-stretch gap-x-20 gap-y-6 lg:grid-cols-2'>
+					<h3 className='flex min-h-16 items-center justify-center rounded-button border border-border-subtle bg-brand-surface px-5 py-3 text-center text-[length:var(--step-2)] font-bold text-brand-accent shadow-card'>
+						{metodoPageContent.leftColumnTitle}
+					</h3>
+					<h3 className='flex min-h-16 items-center justify-center rounded-button border border-border-subtle bg-brand-surface px-5 py-3 text-center text-[length:var(--step-2)] font-bold text-brand-accent shadow-card'>
+						{metodoPageContent.rightColumnTitle}
+					</h3>
+					<MethodTextCard text={metodoLeftCards[0]?.text ?? ''} />
+					<MethodTextCard text={metodoRightCards[0]?.text ?? ''} />
+					<MethodTextCard text={metodoLeftCards[1]?.text ?? ''} />
+					<MethodTextCard text={metodoRightCards[1]?.text ?? ''} />
 				</div>
 
-				<div className='mt-6'>
-					<article className='surface-panel p-6 sm:p-8'>
-						<p className='text-[length:var(--step-1)] font-semibold leading-relaxed text-text-primary'>
-							{metodoCards[4].text}
-						</p>
-					</article>
+				<div className='mx-auto mt-10 max-w-3xl'>
+					<MethodTextCard text={metodoPageContent.bottomText} />
 				</div>
 			</Container>
 		</section>

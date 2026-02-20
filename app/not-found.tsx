@@ -7,7 +7,7 @@ export default function NotFound() {
 		<section className='section-spacing bg-surface-base'>
 			<Container className='text-center'>
 				<h1 className='text-[length:var(--step-3)] font-bold text-text-primary'>
-					Pagina no encontrada
+					Página no encontrada
 				</h1>
 				<p className='mt-4 text-text-secondary'>
 					La URL solicitada no existe o fue movida.

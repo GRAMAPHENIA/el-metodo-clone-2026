@@ -7,7 +7,7 @@ export function SiteFooter() {
 	const year = new Date().getFullYear();
 
 	return (
-		<footer className='border-t border-border-subtle bg-brand-primary' id='footer'>
+		<footer className='border-t border-border-subtle bg-brand-primary/25' id='footer'>
 			<Container className='grid gap-8 py-10 md:grid-cols-3'>
 				<section aria-labelledby='footer-explorar'>
 					<h2 id='footer-explorar' className='text-lg font-bold text-brand-ink'>
@@ -65,11 +65,11 @@ export function SiteFooter() {
 
 				<section aria-labelledby='footer-legal'>
 					<h2 id='footer-legal' className='text-lg font-bold text-brand-ink'>
-						Informacion legal
+						Información legal
 					</h2>
 					<div className='mt-4 space-y-3 text-xs leading-relaxed text-text-secondary'>
 						<p>
-							Se deja constancia que EL METODO ADULMA es impartido de manera
+							Se deja constancia que EL MÉTODO ADULMA es impartido de manera
 							directa por la Lic. Ana T. de León, creadora del mismo, en el salón
 							de Ricardo Gutiérrez 1372, Olivos, los días lunes y jueves de 11.00
 							a 12.00 hs, y en el salón de La Redonda de Belgrano, sito en Vuelta
@@ -78,7 +78,7 @@ export function SiteFooter() {
 						</p>
 						<p>
 							Las personas que figuran en esta página han concurrido y finalizado
-							el curso de Formación de EL METODO ADULMA. La aplicación y
+							el curso de Formación de EL MÉTODO ADULMA. La aplicación y
 							transmisión de los conocimientos adquiridos durante la cursada por
 							parte de dichos instructores se realiza bajo su exclusiva
 							responsabilidad, siendo los únicos pasibles de las acciones que
@@ -89,7 +89,7 @@ export function SiteFooter() {
 			</Container>
 
 			<div className='border-t border-border-subtle py-5 text-center text-xs font-semibold text-brand-ink'>
-				Copyright © EL METODO ADULMA {year}. Todos los derechos reservados.
+				Copyright © EL MÉTODO ADULMA {year}. Todos los derechos reservados.
 			</div>
 		</footer>
 	);

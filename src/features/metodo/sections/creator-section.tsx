@@ -8,7 +8,7 @@ import { creatorContent } from '@/src/features/metodo/metodo-content';
 
 export function CreatorSection() {
 	return (
-		<section className='section-spacing bg-brand-surface'>
+		<section className='section-spacing bg-surface-base'>
 			<Container>
 				<SectionHeading
 					eyebrow='Creadora'
@@ -20,15 +20,15 @@ export function CreatorSection() {
 					<div className='mx-auto overflow-hidden rounded-full border-4 border-border-strong shadow-floating'>
 						<Image
 							src={creatorContent.image}
-							alt='Retrato de Ana T. de Leon'
+							alt='Retrato de Ana T. de León'
 							width={320}
 							height={320}
 							className='h-72 w-72 object-cover sm:h-80 sm:w-80'
 						/>
 					</div>
 
-					<div className='surface-panel p-6'>
-						<ul className='space-y-3 text-base leading-relaxed text-text-secondary'>
+					<div className='surface-card p-6 sm:p-8'>
+						<ul className='space-y-3 text-base leading-relaxed text-text-primary'>
 							{creatorContent.bio.map(item => (
 								<li key={item}>- {item}</li>
 							))}
@@ -37,7 +37,7 @@ export function CreatorSection() {
 							<LinkButton href={creatorContent.cvUrl} target='_blank' rel='noreferrer noopener'>
 								<span className='inline-flex items-center gap-2'>
 									<BsFillHandIndexThumbFill aria-hidden='true' />
-									Ver curriculum completo
+									Ver currículum completo
 								</span>
 							</LinkButton>
 						</div>

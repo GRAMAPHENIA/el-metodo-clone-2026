@@ -25,7 +25,7 @@ export async function sendContactEmail(
 			ok: false as const,
 			code: 'CONFIGURATION_ERROR' as const,
 			message:
-				'Configuracion de email incompleta. Define RESEND_API_KEY, CONTACT_TO_EMAIL y CONTACT_FROM_EMAIL.',
+				'Configuración de email incompleta. Define RESEND_API_KEY, CONTACT_TO_EMAIL y CONTACT_FROM_EMAIL.',
 		};
 	}
 
@@ -41,7 +41,7 @@ export async function sendContactEmail(
 				`Nombre: ${payload.name}`,
 				`Apellido: ${payload.lastName ?? '-'}`,
 				`Email: ${payload.email}`,
-				`Telefono: ${payload.phone ?? '-'}`,
+				`Teléfono: ${payload.phone ?? '-'}`,
 				`Ruta: ${payload.sourcePath}`,
 				'',
 				'Mensaje:',

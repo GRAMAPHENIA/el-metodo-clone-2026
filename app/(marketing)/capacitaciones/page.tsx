@@ -12,7 +12,7 @@ import type { SeoPageConfig } from '@/src/types/content';
 const seoConfig: SeoPageConfig = {
 	title: 'Capacitaciones',
 	description:
-		'Formacion certificada para profesionales e instructores interesados en ensenar El Metodo Adulma.',
+		'Formación certificada para profesionales e instructores interesados en enseñar El Método Adulma.',
 	path: '/capacitaciones',
 	keywords: [
 		'capacitaciones',
@@ -27,7 +27,7 @@ export const metadata: Metadata = buildPageMetadata(seoConfig);
 export default function CapacitacionesPage() {
 	return (
 		<>
-			<h1 className='sr-only'>Capacitaciones de El Metodo Adulma</h1>
+			<h1 className='sr-only'>Capacitaciones de El Método Adulma</h1>
 			<script
 				type='application/ld+json'
 				dangerouslySetInnerHTML={{

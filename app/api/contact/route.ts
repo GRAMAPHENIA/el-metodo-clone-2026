@@ -36,7 +36,7 @@ export async function POST(request: Request) {
 		if (!parsed.success) {
 			return errorResponse(
 				'VALIDATION_ERROR',
-				'Los datos del formulario son invalidos.',
+				'Los datos del formulario son inválidos.',
 				400
 			);
 		}
@@ -44,12 +44,12 @@ export async function POST(request: Request) {
 		const payload = parsed.data;
 
 		if (payload.honeypot && payload.honeypot.trim() !== '') {
-			return errorResponse('SPAM_DETECTED', 'Solicitud invalida.', 400);
+			return errorResponse('SPAM_DETECTED', 'Solicitud inválida.', 400);
 		}
 
 		const elapsed = Date.now() - payload.formStartedAt;
 		if (elapsed < 2500) {
-			return errorResponse('SPAM_DETECTED', 'Solicitud invalida.', 400);
+			return errorResponse('SPAM_DETECTED', 'Solicitud inválida.', 400);
 		}
 
 		const ip = await getClientIp();

@@ -16,7 +16,9 @@ export function VideoCard({ src, title, poster, className }: VideoCardProps) {
 	const [isLoaded, setIsLoaded] = useState(false);
 
 	return (
-		<figure className={cn('surface-card overflow-hidden', className)}>
+		<figure
+			className={cn('surface-card mx-auto w-full max-w-[18rem] overflow-hidden', className)}
+		>
 			<div className='relative'>
 				{!isLoaded ? <div aria-hidden='true' className='media-skeleton absolute inset-0 z-10' /> : null}
 				<video

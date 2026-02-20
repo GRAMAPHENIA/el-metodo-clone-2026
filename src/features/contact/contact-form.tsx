@@ -65,7 +65,7 @@ export function ContactForm() {
 		} catch {
 			setState({
 				status: 'error',
-				message: 'Ocurrio un error de red. Intenta nuevamente.',
+				message: 'Ocurrió un error de red. Intenta nuevamente.',
 			});
 		}
 	};
@@ -73,7 +73,7 @@ export function ContactForm() {
 	return (
 		<section
 			id='contacto'
-			className='section-spacing border-t border-border-subtle bg-brand-surface'
+			className='section-spacing bg-surface-base'
 		>
 			<Container>
 				<div className='mx-auto max-w-2xl surface-card p-6 sm:p-8'>
@@ -121,9 +121,9 @@ export function ContactForm() {
 						</label>
 
 						<label className='block'>
-							<span className='mb-1 block text-sm font-semibold text-text-primary'>
-								Telefono
-							</span>
+								<span className='mb-1 block text-sm font-semibold text-text-primary'>
+									Teléfono
+								</span>
 							<input
 								type='tel'
 								name='phone'

@@ -12,13 +12,14 @@ export function CourseGallerySection() {
 		<section className='section-spacing bg-surface-base'>
 			<Container>
 				<SectionHeading
-					eyebrow='Galeria de cursos'
+					eyebrow='Galería de capacitaciones'
 					title='Experiencias de nuestras capacitaciones'
+					description='Así se vive cada encuentro: aprendizaje activo, trabajo en equipo y herramientas aplicables desde el primer día.'
 				/>
 
 				<div className='mt-10 grid gap-6 md:grid-cols-2'>
-					{videos.map((video, index) => (
-						<VideoCard key={video.src} src={video.src} title={`Video de capacitacion ${index + 1}`} />
+					{videos.map(video => (
+						<VideoCard key={video.src} src={video.src} />
 					))}
 				</div>
 

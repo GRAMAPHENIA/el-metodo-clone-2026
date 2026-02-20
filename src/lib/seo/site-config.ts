@@ -1,9 +1,9 @@
 import type { NavItem, SiteConfig } from '@/src/types/content';
 
 export const siteConfig: SiteConfig = {
-	name: 'El Metodo Adulma',
+	name: 'El Método Adulma',
 	description:
-		'Metodo integral para bienestar de adultos mayores, con cursos para profesionales e instructores.',
+		'Método integral para bienestar de adultos mayores, con cursos para profesionales e instructores.',
 	domain: 'https://elmetodoadulma.com',
 	locale: 'es-AR',
 	defaultOgImage: '/og-image.jpeg',
@@ -11,9 +11,9 @@ export const siteConfig: SiteConfig = {
 
 export const navItems: NavItem[] = [
 	{ label: 'Inicio', href: '/' },
-	{ label: 'El Metodo', href: '/nosotros' },
+	{ label: 'El Método', href: '/nosotros' },
 	{ label: 'Capacitaciones', href: '/capacitaciones' },
-	{ label: 'Galeria', href: '/galeria' },
+	{ label: 'Galería', href: '/galeria' },
 	{ label: 'Contacto', href: '/#contacto' },
 ];
 

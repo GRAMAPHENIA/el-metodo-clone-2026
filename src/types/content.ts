@@ -33,9 +33,13 @@ export type InstructorProfile = {
 export type CourseInfo = {
 	id: string;
 	title: string;
-	description: string;
+	introText: string;
+	secondaryText: string;
+	enrollmentNotice: string;
 	ctaLabel: string;
 	ctaHref: string;
+	learnMoreLabel: string;
+	learnMoreContent: string[];
 };
 
 export type SeoPageConfig = {

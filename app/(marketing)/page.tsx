@@ -10,10 +10,10 @@ import type { SeoPageConfig } from '@/src/types/content';
 const seoConfig: SeoPageConfig = {
 	title: 'Inicio',
 	description:
-		'Metodo integral para adultos mayores con enfoque en movimiento, cognicion y bienestar comunitario.',
+		'Método integral para adultos mayores con enfoque en movimiento, cognición y bienestar comunitario.',
 	path: '/',
 	keywords: [
-		'metodo adulma',
+		'método adulma',
 		'adultos mayores',
 		'envejecimiento activo',
 		'bienestar',

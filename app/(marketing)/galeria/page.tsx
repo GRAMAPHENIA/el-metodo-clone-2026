@@ -9,11 +9,11 @@ import { siteConfig } from '@/src/lib/seo/site-config';
 import type { SeoPageConfig } from '@/src/types/content';
 
 const seoConfig: SeoPageConfig = {
-	title: 'Galeria',
+	title: 'Galería',
 	description:
-		'Imagenes y videos de clases, encuentros y capacitaciones de El Metodo Adulma.',
+		'Imágenes y videos de clases, encuentros y capacitaciones de El Método Adulma.',
 	path: '/galeria',
-	keywords: ['galeria', 'videos', 'adultos mayores', 'metodo adulma'],
+	keywords: ['galería', 'videos', 'adultos mayores', 'método adulma'],
 };
 
 export const metadata: Metadata = buildPageMetadata(seoConfig);
@@ -21,14 +21,14 @@ export const metadata: Metadata = buildPageMetadata(seoConfig);
 export default function GaleriaPage() {
 	return (
 		<>
-			<h1 className='sr-only'>Galeria de El Metodo Adulma</h1>
+			<h1 className='sr-only'>Galería de El Método Adulma</h1>
 			<script
 				type='application/ld+json'
 				dangerouslySetInnerHTML={{
 					__html: JSON.stringify(
 						getBreadcrumbJsonLd([
 							{ name: 'Inicio', item: siteConfig.domain },
-							{ name: 'Galeria', item: `${siteConfig.domain}/galeria` },
+							{ name: 'Galería', item: `${siteConfig.domain}/galeria` },
 						])
 					),
 				}}

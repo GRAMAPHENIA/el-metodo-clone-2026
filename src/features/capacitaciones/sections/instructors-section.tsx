@@ -6,12 +6,12 @@ import { instructorProfiles } from '@/src/features/capacitaciones/capacitaciones
 
 export function InstructorsSection() {
 	return (
-		<section className='section-spacing bg-brand-surface'>
+		<section className='section-spacing bg-surface-base'>
 			<Container>
 				<SectionHeading
-					eyebrow='Instructores'
-					title='Profesionales certificados'
-					description='Ellos finalizaron la formacion de El Metodo Adulma.'
+					eyebrow='CURSO'
+					title='Ellos lo han finalizado'
+					description='Ellos finalizaron la formación de El Método Adulma.'
 				/>
 
 				<div className='mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5'>
@@ -29,7 +29,6 @@ export function InstructorsSection() {
 							<h3 className='mt-4 text-base font-semibold text-text-primary'>
 								{instructor.name}
 							</h3>
-							<p className='mt-1 text-sm text-text-secondary'>{instructor.role}</p>
 						</article>
 					))}
 				</div>

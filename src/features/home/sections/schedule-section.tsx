@@ -6,7 +6,7 @@ import { locationCards } from '@/src/features/home/home-content';
 
 export function ScheduleSection() {
 	return (
-		<section className='section-spacing bg-brand-surface'>
+		<section className='section-spacing bg-surface-base'>
 			<Container>
 				<SectionHeading
 					eyebrow='Sedes y horarios'

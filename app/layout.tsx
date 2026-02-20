@@ -22,12 +22,12 @@ const libreBaskerville = localFont({
 export const metadata: Metadata = {
 	metadataBase: new URL(siteConfig.domain),
 	title: {
-		default: 'El Metodo Adulma | Bienestar para adultos mayores',
+		default: 'El Método Adulma | Bienestar para adultos mayores',
 		template: `%s | ${siteConfig.name}`,
 	},
 	description: siteConfig.description,
 	applicationName: siteConfig.name,
-	authors: [{ name: 'El Metodo Adulma' }],
+	authors: [{ name: 'El Método Adulma' }],
 	icons: [{ rel: 'icon', url: '/logoroundedsvg.svg' }],
 	formatDetection: {
 		telephone: false,
