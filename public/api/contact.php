@@ -197,7 +197,7 @@ if (!function_exists('mail')) {
 }
 
 $fullName = trim($name . ' ' . $lastName);
-$subject = sprintf('[Contacto web] %s', $fullName);
+$subject = $fullName;
 $text = implode("\n", [
     'Nueva consulta desde elmetodoadulma.com',
     '',

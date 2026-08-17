@@ -26,9 +26,10 @@ export function buildPageMetadata(config: SeoPageConfig): Metadata {
 			images: [
 				{
 					url: siteConfig.defaultOgImage,
-					width: 1200,
-					height: 630,
-					alt: `${siteConfig.name} portada`,
+					width: 719,
+					height: 1280,
+					type: 'image/jpeg',
+					alt: 'El Método ADULMA®: actividad física y cognitiva para personas mayores',
 				},
 			],
 		},

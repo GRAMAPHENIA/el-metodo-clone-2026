@@ -6,7 +6,7 @@ export const siteConfig: SiteConfig = {
 		'Método integral para bienestar de adultos mayores, con cursos para profesionales e instructores.',
 	domain: 'https://elmetodoadulma.com',
 	locale: 'es-AR',
-	defaultOgImage: '/og-image.webp',
+	defaultOgImage: '/og-image-adulma.jpeg',
 };
 
 export const navItems: NavItem[] = [
