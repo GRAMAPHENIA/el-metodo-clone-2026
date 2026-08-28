@@ -80,6 +80,19 @@ export const locationCards: LocationCard[] = [
 		],
 	},
 	{
+		id: 'retiro-recoleta',
+		location: 'Retiro-Recoleta',
+		scheduleTitle: 'Horarios',
+		schedules: [
+			{
+				time: 'Lunes y jueves de 11.30hs a 12.30hs',
+				venue: 'Asociación de Cultura Inglesa',
+				note: '20, 24 y 31 de agosto Clases gratuitas',
+				address: 'Suipacha 1333',
+			},
+		],
+	},
+	{
 		id: 'florida',
 		location: 'Florida',
 		scheduleTitle: 'Horarios',
@@ -196,6 +209,18 @@ export const locationCards: LocationCard[] = [
 				time: 'Martes y jueves de 10.00hs a 11.00hs',
 				venue: 'Asociación Calabresa suc. Flores',
 				address: 'Yerbal 2636',
+			},
+		],
+	},
+	{
+		id: 'club-oeste-caballito',
+		location: 'Caballito',
+		scheduleTitle: 'Horarios',
+		schedules: [
+			{
+				time: 'Lunes y miércoles de 10.00hs a 11.00hs',
+				address: 'Av. Juan Bautista Alberdi 436',
+				note: 'Club Oeste Caballito',
 			},
 		],
 	},
