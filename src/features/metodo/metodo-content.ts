@@ -38,6 +38,7 @@ export const creatorContent = {
 	image: '/avatar/teresa.webp',
 	bio: [
 		'Miembro de la Asociación Médica Argentina.',
+		'Miembro de la Soc. Arg. de Gerontología y Geriatría.',
 		'Docente.',
 	],
 	cvUrl: '/cv-ana.pdf',
