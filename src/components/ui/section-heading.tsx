@@ -4,6 +4,7 @@ type SectionHeadingProps = {
 	eyebrow?: string;
 	title: string;
 	description?: string;
+	descriptionClassName?: string;
 	className?: string;
 };
 
@@ -11,6 +12,7 @@ export function SectionHeading({
 	eyebrow,
 	title,
 	description,
+	descriptionClassName,
 	className,
 }: SectionHeadingProps) {
 	return (
@@ -26,7 +28,12 @@ export function SectionHeading({
 				{title}
 			</h2>
 			{description ? (
-				<p className='mt-4 max-w-[76rem] !text-left text-[length:var(--step-0)] leading-relaxed text-text-secondary/90'>
+				<p
+					className={cn(
+						'mt-4 max-w-[76rem] !text-left text-[length:var(--step-0)] leading-relaxed text-text-secondary/90',
+						descriptionClassName,
+					)}
+				>
 					{description}
 				</p>
 			) : null}

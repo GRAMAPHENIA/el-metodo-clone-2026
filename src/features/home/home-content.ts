@@ -171,7 +171,7 @@ export const locationCards: LocationCard[] = [
 		schedules: [
 			{
 				time: 'Lunes y miércoles de 10.00hs a 11.00hs',
-				venue: 'Centro Sarandí 10',
+				venue: 'Centro de jubilados Sarandí Diez',
 				address: 'Brandsen 2650',
 			},
 		],
@@ -221,6 +221,19 @@ export const locationCards: LocationCard[] = [
 				time: 'Lunes y miércoles de 10.00hs a 11.00hs',
 				address: 'Av. Juan Bautista Alberdi 436',
 				note: 'Club Oeste Caballito',
+			},
+		],
+	},
+	{
+		id: 'santa-cruz',
+		location: 'Santa Cruz',
+		scheduleTitle: 'Horarios',
+		schedules: [
+			{
+				time: 'Lunes y miércoles de 10.00hs a 11.00hs y martes y jueves de 21.00hs a 22.00hs',
+				venue: 'Escuelita Deportiva AOMA - AMUTMIN',
+				note: ' Asoc. Obrera Minera Arg. ·  Asoc. Mutual de Trabajadores de la Minería',
+				address: 'Vieytes 831, Puerto San Julián',
 			},
 		],
 	},
